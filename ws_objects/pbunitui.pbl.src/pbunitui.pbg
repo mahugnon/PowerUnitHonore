@@ -3,4 +3,21 @@
  "pbunitui.pbl" "";
 @end;
 @begin Objects 
+ "pbunit.sra" "pbunitui.pbl";
+ "d_pbunit_librarydirectory.srd" "pbunitui.pbl";
+ "d_pbunit_librarylist.srd" "pbunitui.pbl";
+ "d_pbunit_progress.srd" "pbunitui.pbl";
+ "d_pbunit_targetlist.srd" "pbunitui.pbl";
+ "d_pbunit_testlist.srd" "pbunitui.pbl";
+ "d_pbunit_testresult.srd" "pbunitui.pbl";
+ "pr_pbunit.srj" "pbunitui.pbl";
+ "m_pbunit_main.srm" "pbunitui.pbl";
+ "n_pbunit_librarymanager.sru" "pbunitui.pbl";
+ "n_pbunit_testresult.sru" "pbunitui.pbl";
+ "n_pbunit_windowresizeservice.sru" "pbunitui.pbl";
+ "u_pbunit_about.sru" "pbunitui.pbl";
+ "u_pbunit_cb.sru" "pbunitui.pbl";
+ "u_pbunit_progressbar.sru" "pbunitui.pbl";
+ "w_pbunit.srw" "pbunitui.pbl";
+ "w_pbunit_about.srw" "pbunitui.pbl";
 @end;

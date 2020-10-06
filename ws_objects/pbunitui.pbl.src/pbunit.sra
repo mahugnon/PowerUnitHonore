@@ -1,7 +1,6 @@
-﻿$PBExportHeader$pbunitgui.sra
-$PBExportComments$Generated Application Object
+HA$PBExportHeader$pbunit.sra
 forward
-global type pbunitgui from application
+global type pbunit from application
 end type
 global transaction sqlca
 global dynamicdescriptionarea sqlda
@@ -17,26 +16,26 @@ boolean gb_commandline = false
 
 end variables
 
-global type pbunitgui from application
-string appname = "pbunitgui"
+global type pbunit from application
+string appname = "pbunit"
 end type
-global pbunitgui pbunitgui
+global pbunit pbunit
 
-on pbunitgui.create
-appname = "pbunitgui"
-message = create message
-sqlca = create transaction
-sqlda = create dynamicdescriptionarea
-sqlsa = create dynamicstagingarea
-error = create error
+on pbunit.create
+appname="pbunit"
+message=create message
+sqlca=create transaction
+sqlda=create dynamicdescriptionarea
+sqlsa=create dynamicstagingarea
+error=create error
 end on
 
-on pbunitgui.destroy
-destroy( sqlca )
-destroy( sqlda )
-destroy( sqlsa )
-destroy( error )
-destroy( message )
+on pbunit.destroy
+destroy(sqlca)
+destroy(sqlda)
+destroy(sqlsa)
+destroy(error)
+destroy(message)
 end on
 
 event systemerror;f_catchSystemError()

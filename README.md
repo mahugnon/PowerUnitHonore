@@ -14,5 +14,14 @@ For the PBL regenerating to work,
   - you need to change **libraryName.pbg** file encoding from **utf-8 bom** to **utf-8**.
 Finally, you should edit the following script and run it
 ```Powerbuilder
+start session
+scc debug true
+scc set connect property logfile "path_to_log_file.log" 
+scc connect offline
+scc set target "path_to_target_file.pbt" importonly
+scc refresh target 3pass
+scc close
+end session
+
 script here
 ```

@@ -24,6 +24,4 @@ scc set target "path_to_target_file.pbt" importonly
 scc refresh target 3pass
 scc close
 end session
-
-script here
 ```

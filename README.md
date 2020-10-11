@@ -1,12 +1,12 @@
 # PowerUnitHonore
 ## PBL regeneration with Powerbuilder Orcascr170
-Powerbuilder binary files **.pbl**  represents a Powerbuilder library and can only be read by the Powerbuilder IDE.
-For a  versioned Powerbuilder project, only sources code are up to date, but **pbl** are not. As consequence, when you run the project outdated version is run.
+Powerbuilder binary files **.pbl**  represents  Powerbuilder libraries and can only be read by the Powerbuilder IDE.
+For a  versioned Powerbuilder project, only sources code are up to date(file extension **.sru,srf,srd,srw .etc.**), but **pbl** are not. As consequence, when you run  just cloned or checkedout project, an  outdated version is run.
 
-One need to refresh the project update **pbl** files to update library files **.pbl**. This can be done with the Powerbuilder IDE or from the command-line using **Orcascript** command-line tool provided by Powerbuilder.
+One need to refresh the project to update library files **.pbl**. This can be done with the Powerbuilder IDE or from the command-line using **Orcascript** command-line tool provided by Powerbuilder.
 
 Here I present a way to refresh **pbl** using command-line. This can be used as a post-commit script or simply CI build step( a step before unit tests running).
-Regenerating binary files PBL for version controlling in Powerbuilder is not obvious and quite tricky.
+Regenerating binary files **pbl**  for version controlling in Powerbuilder is not obvious and quite tricky.
 The first thing to know is that when you are versioning a Powerbuilder project, the IDE PB17 creates a folder named ws_objects where it puts all the source grouped in a directory corresponding to the library that the source belongs to.
 For each of these library folders, a file  **libraryName.pbg**. A  **libraryName.pbg** contains the list of Powerbuilder objects (**classes** in java world) that a library contains. 
 By default **libraryName.pbg** files are saved with **utf-8 bom** encoding.  
